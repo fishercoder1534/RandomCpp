@@ -9,7 +9,7 @@ Foo(int a, int b);
 
 void myMethod1();
 
-void myMethod2(int a, int b);
+int myMethod2(int a, int b);
 
 int m_variable1;
 int m_variable2;

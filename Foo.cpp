@@ -11,8 +11,14 @@ Foo::~Foo()
 printf("I am a happy destructor that would do cleanup here.\n");
 }
 
+void Foo::myMethod1()
+{
+    cout << "In myMethod1!\n";
+}
+
 int main(int argc, char** argv) {
     cout << "Program started!\n";
     Foo* foo = new Foo();
+    foo->myMethod1();
     delete foo;
 }
