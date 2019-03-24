@@ -33,4 +33,9 @@ int main(int argc, char** argv) {
     foo3 = 15;
     printf("foo3 is: %d\n", foo3);
     printf("bar is: %d\n", bar);
+
+    Foo* fooArray = new Foo[4];
+    delete[] fooArray;//remember to delete the array: [], not just the variable!
+
+    cout << "Program finished!\n";
 }
