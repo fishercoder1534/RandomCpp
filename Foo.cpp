@@ -37,5 +37,21 @@ int main(int argc, char** argv) {
     Foo* fooArray = new Foo[4];
     delete[] fooArray;//remember to delete the array: [], not just the variable!
 
+    //making a local variable from a pointer
+    Foo myFooInstance;//create a local variable instance of foo
+    Foo* myFooPointer;//declare a pointer to Foo class
+    myFooPointer = &myFooInstance;//set the value of the pointer to the address of myFooInstance. "&" means to get the address of a variable
+    //this is also the key to remember!!!!
+
+
+    //the other way: making a pointer from a local variable
+    Foo* fooPointer = new Foo();//create a pointer to Foo
+    Foo myFooInstance2 = *fooPointer;//"*" means to dereference the pointer and then assign it to myFooInstance2; copy is made!
+    //at this moment, myFooInstance2 is actually different from fooPointer! They are two different copies!
+    //this is key!!!!!!!!! remmeber this! It dereferences the pointer and assigns it to myFooInstance2!!!
+    printf("&fooPointer: %p\n", &fooPointer);
+    printf("&myFooInstance2: %p\n", &myFooInstance2);
+
+
     cout << "Program finished!\n";
 }
