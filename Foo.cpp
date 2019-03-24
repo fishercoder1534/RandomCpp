@@ -50,13 +50,13 @@ int main(int argc, char** argv) {
 
     // changing either bar or foo3, will change the other one as well.
     myFooInstance.m_variable1 = 123;
-    printf("after changing myFooInstance.m_variable1 value:\n");
+    printf("\n\nafter changing myFooInstance.m_variable1 value:\n");
     printf("myFooInstance.m_variable1: %d\n", myFooInstance.m_variable1);
     printf("myFooPointer->m_variable1 %d\n", myFooPointer->m_variable1);
 
     // changing either bar or foo3, will change the other one as well.
     myFooPointer->m_variable1 = 456;
-    printf("after changing myFooPointer->m_variable1 value:\n");
+    printf("\n\nafter changing myFooPointer->m_variable1 value:\n");
     printf("myFooInstance.m_variable1: %d\n", myFooInstance.m_variable1);
     printf("myFooPointer->m_variable1 %d\n", myFooPointer->m_variable1);
 
