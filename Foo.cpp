@@ -42,6 +42,9 @@ int main(int argc, char** argv) {
     Foo* myFooPointer;//declare a pointer to Foo class
     myFooPointer = &myFooInstance;//set the value of the pointer to the address of myFooInstance. "&" means to get the address of a variable
     //this is also the key to remember!!!!
+    // They are two different copies!
+    printf("&myFooInstance: %p\n", &myFooInstance);
+    printf("&myFooPointer: %p\n", &myFooPointer);
 
 
     //the other way: making a pointer from a local variable
